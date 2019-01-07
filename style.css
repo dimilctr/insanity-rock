@@ -1,0 +1,887 @@
+
+/*                  Caractéristiques Principales du Site                */
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.flex_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body.flex_container {
+    justify-content:flex-start;
+}
+
+
+/*     Partie Responsive  */
+
+@media all and (max=width:1600px);
+
+
+/*        Background   */
+
+
+body{
+    background:url(images/background.jpg);
+    
+    z-index: 0;
+}
+
+
+/*      Menu navigation      */
+
+
+header.flex_container{
+    background-color: black;
+    border-bottom : 2px solid red;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    align-items:stretch;
+    position: fixed;
+    order: 1;
+}
+nav.flex_container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black; 
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 23px;
+    text-shadow: 2px 2px 2px red;
+}
+
+nav a:hover {
+    color:pink;
+    text-decoration:none;
+}
+
+#logo {
+    width : 150px;
+    height : 85px;
+}
+
+
+#account {
+    width : 40px;
+    height: 40px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+
+/*      Sous Menu navigation      */
+
+
+.sousmenu.flex_container {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    margin-top: 85px;
+    font-family: lobster;
+    position: fixed;
+}
+
+.sousmenu a{
+    height: 30px;
+    border: 76px;
+    color: white;
+    text-shadow: 2px 2px 2px red;
+    font-size: 20px;
+    display: inline-block; 
+    text-decoration: none;
+}
+
+.sousmenu a:hover {
+    color:pink;
+    text-decoration:none;
+}
+
+
+/*             Page Accueil              */
+
+
+presentation.flex_container {
+    height: 100px;
+    width: 100px;
+}
+
+h1.flex_container{
+    color: white;
+    font-family:lobster;
+    font-size: 80px;
+    justify-content: center;
+    height: 370px;
+    text-shadow: 3px 3px 3px red;
+    padding-top: 20px;
+    
+}
+
+p.presentation{
+    color: white;
+    text-align: center;
+    font-family:lobster;
+    font-size: 35px;
+    width: 60%;
+    height: 125px;
+    justify-content: center;
+    text-shadow: 3px 3px 3px red;
+    padding-bottom: 62px;
+}
+
+/*        Page    Artistes                 */
+
+
+.artistesdejapasses.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 160px;
+    justify-content: space-between;
+}
+
+div.artistesdejapassesimg {
+    height: 700px;
+    width: 1350px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 160px;
+    justify-content: space-between;
+}
+
+div.artistesdejapassesimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+.artistesavenir.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 165px;
+    justify-content: space-between;
+}
+
+div.artistesavenirimg {
+    height: 650px;
+    width: 1350px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 67px;
+    justify-content: space-between;
+   
+    
+    
+}
+
+div.artistesavenirimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+/*                Page Avis             */
+
+p.avis{
+    flex-direction: row
+}
+
+.rating {
+   direction: rtl;
+}
+.rating a {
+   color:;
+   text-decoration: none;
+   font-size: 3em;
+   transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+   color: orange;
+   cursor: pointer;
+}
+.avis.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 110px;
+    justify-content: space-between;
+}
+
+div.avisimg {
+    
+    width: 1350px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.avisimg img{
+    height: 100px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+p.p_avis{
+     text-decoration: none;
+     color: white;
+     text-transform: uppercase;
+     text-decoration-style: solid;
+     font-family:lobster;
+     font-size: 10px;
+}
+
+
+/*        Caroussel:                 */
+
+
+.carousel div {
+    width: 600px;
+    height: 350px;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+}
+
+.
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+    
+}
+ 
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+ 
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+ 
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+ 
+.carousel-item img {
+    display: block;
+    height: 400px;
+    width: 600px; 
+}
+ 
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+ 
+.carousel-control.prev {
+    left: 2%;
+}
+ 
+.carousel-control.next {
+    right: 2%;
+}
+ 
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+ 
+    #carousel-1:checked ~ .control-1,
+    #carousel-2:checked ~ .control-2,
+    #carousel-3:checked ~ .control-3 {
+    display: block;
+}
+ 
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+ 
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+ 
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+ 
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+ 
+    #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #ff0000;
+}
+
+
+ 
+/*                Compte                */
+
+.compte {
+    display: flex;
+    flex-direction: row;
+    height: 790px;
+    width: auto;
+    
+}
+#se_connecter {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color:black;
+    background-color: white;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    
+}
+input {
+    border-radius: 5px;
+    color: black;
+    background-color: #e1e8ed ;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+ 
+label {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#s_inscrire {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px ;
+    margin-right: auto;
+    font-family:'Oswald', sans-serif;
+    font-size: 20px;
+    color:black;
+    background-color: white;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+/*        Page    Concerts                    */
+
+
+.concertsdujour.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 160px;
+    justify-content: space-between;
+}
+
+div.concertsdujourimg {
+    height: 700px;
+    width: 850px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 160px;
+    justify-content: space-between;
+}
+
+div.concertsdujourimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+.nouveauxconcerts.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 165px;
+    justify-content: space-between;
+}
+
+div.nouveauxconcertsimg {
+    height: 650px;
+    width: 900px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 67px;
+    justify-content: space-between;
+     
+}
+
+div.nouveauxconcertsimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+.bientotdisponibles.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 340px;
+    justify-content: space-between;
+}
+
+div.bientotdisponiblesimg {
+    height: 650px;
+    width: 900px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 150px;
+    justify-content: space-between;
+   
+    
+    
+}
+
+div.bientotdisponiblesimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+
+/*       Page Conditions                 */
+
+section.conditions{
+    color: white;
+    font-family:lobster;
+    font-size: 18px;
+    justify-content: justify;
+    height: 950px;
+    width: 1200px;
+    margin-top: 150px;
+    justify-content: space-around;
+    border-radius : 50px;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: black;
+}
+
+p#titre_conditions{
+    color: white;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/*       Page Confidentialité              */
+
+section.confidentialite{
+     color: white;
+    font-family:lobster;
+    font-size: 18px;
+    justify-content: justify;
+    height: 2700px;
+    width: 1200px;
+    margin-top: 150px;
+    justify-content: space-around;
+    border-radius : 50px;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: black;
+}
+
+
+/*       Page Avis               */
+
+body {
+    background:url(images/Page%20concerts%20et%20artistes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 18px; 
+}
+
+#rubriqueavis {
+    color: white;
+    font-size: 0px;
+    justify-content: justify;
+    height: 800px;
+    width: 600px;
+    margin-top: 150px;
+    justify-content: space-around;
+    border-radius :15px;
+    border:  3px solid white;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: white;
+    
+}
+#rubriqueavis p {
+    font-size: 18px;
+    font-family: oswald;
+    text-align: left;
+    text-shadow: none;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    color: black;
+    
+}
+
+#rubriqueavis h1 {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    font-size: 45px;
+    
+}
+#rubriqueavis h2 {
+    text-align: left;
+    font-size: 25px;
+    text-shadow: none;
+    font-family: oswald;
+    color: black;
+}
+
+
+
+/*        Page Médias                     */
+
+.medias{
+    background:url(images/Page%20concerts%20et%20artistes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 864px;
+    height: 100px;
+}
+
+.music-card {
+    top: 150px;
+    background: #fff;
+    box-shadow: 0px 8px 28px -10px rgba(0,0,0,0.45);
+    overflow:hidden;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border-radius: 6px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+ 
+.image {
+  background: url("Kurt.jpg") no-repeat 75%;
+  background-size: cover;  
+  position: absolute;
+  z-index: 1;
+  opacity: 0.86;
+  height: 350px;
+  width: 300px;
+}
+ 
+.image:after {
+  height: 100px;
+  content: '';
+  top: 250px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(10, 5, 5, 0), #444);
+}
+ 
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+ 
+.title {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Reem Kufi', sans-serif;
+}
+ 
+.artist {
+  color: #cfcfcf;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  font-family: 'Reem Kufi', sans-serif;
+  margin-top: -10px;
+}
+
+
+/*        Page    News                    */
+
+
+.news{
+    background:url(images/Page%20concerts%20et%20artistes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 18px;
+}
+
+section.news{
+    color: white;
+    font-family:lobster;
+    font-size: 18px;
+    justify-content: justify;
+    height: 1950px;
+    width: 600px;
+    margin-top: 150px;
+    justify-content: space-around;
+    border-radius : 50px;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+p.titrenews{
+    font-size: 25px;
+    color:red;
+}
+
+p.paragraphenews{
+   background-color:black; 
+    box-shadow: 3px 3px 5px black, -3px 3px 5px black, 3px -3px 5px black, -3px -3px 5px black;
+}
+
+/*       Mentions légales           */
+
+
+/*        Page Store                */
+
+.store{
+    background:url(images/Page%20concerts%20et%20artistes.png);
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 15px;
+}
+
+.billeterie.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 140px;
+    justify-content: space-between;
+}
+
+div.billeterieimg {
+    height: 700px;
+    width: 1350px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+div.billeterieimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+.goodies.flex_container {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-family:lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+div.goodiesimg {
+    height: 650px;
+    width: 1350px;
+    flex-flow: row wrap;
+    align-items:stretch;
+    padding-top: 67px;
+    justify-content: space-between;
+   
+    
+    
+}
+
+div.goodiesimg img{
+    height: 300px;
+    width: 200px;
+    border-bottom : 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    box-shadow: 3px 3px 5px white, -3px 3px 5px white, 3px -3px 5px white, -3px -3px 5px white;
+    background-color: black;
+}
+
+
+/*        Reseaux Sociaux + Liens du bas  */
+
+footer.reseau {
+    flex-direction: row;
+    height: 100%;
+    width: 1800px;
+    padding-top: 40px;
+    align-content: flex-start;
+    color: white;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    flex-direction: row;
+}
+
+footer{
+    font-family:lobster;
+    font-size: 15px;
+    padding-right: 100px;
+    padding-left: 120px;
+}
+footer a {
+    color: white;
+}
+    
+
+
